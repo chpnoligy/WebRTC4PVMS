@@ -1,0 +1,82 @@
+{
+  "channel_defaults": {},
+  "server": {
+    "debug": false,
+    "facility_desc": "",
+    "facility_refid": "",
+    "http_debug": false,
+    "http_demo": false,
+    "http_dir": "frontend",
+    "http_password": "",
+    "http_port": ":8084",
+    "http_username": "",
+    "https": false,
+    "https_auto_tls": false,
+    "https_auto_tls_name": "",
+    "https_cert": "server.crt",
+    "https_key": "server.key",
+    "https_port": ":443",
+    "ice_credential": "",
+    "ice_servers": [
+      "stun:stun.l.google.com:19302"
+    ],
+    "rtsp_port": ":5541",
+    "sip_udp_port":5060,
+    "sip_tcp_port":0,
+    "sip_wss_port":0,
+    "sip_user":"100",
+    "sip_password":"testtest",
+    "sip_server":"192.168.178.210",
+    "sip_transport":"udp",
+    "sip_realm":"",
+    "ice_username": "",
+    "item_desc": " SIPBridge 1",
+    "item_refid": "000001VB",
+    "site_desc": "CHP Kantoor",
+    "site_refid": "990001SI",
+    "token": {
+      "backend": "http://127.0.0.1/test.php",
+      "enable": false
+    },
+    "verbose": true,
+    "webrtc_port_max": 60000,
+    "webrtc_port_min": 59000,
+    "websocket_url": "wss://5.157.80.190:8083"
+  },
+  "streams": {
+    "001001VI": {
+      "name": "CAM 111",
+      "ondemand": true,
+      "onvif": true,
+      "audio": true,
+      "password": "kooskoos1",
+      "url": "rtsp://192.168.178.111:554/cam/realmonitor?channel=1\u0026subtype=1",
+      "username": "koos"
+    },
+    "001002VI": {
+      "name": "CAM 094(Hikvision)",
+      "onvif": true,
+      "audio": false,
+      "password": "CHP2022Noligy!",
+      "url": "rtsp://admin:CHP2022Noligy!@192.168.178.94:554",
+      "username": "admin"
+    },
+    "4b28011d-8458-41d8-8563-38cdb7bc9621": {
+      "name": "stream name",
+      "url": "rtsp://koos:kooskoos1@192.168.178.111:554/cam/realmonitor?channel=1\u0026subtype=0"
+    },
+    "4ee54987-75dc-4472-b293-3d26ce081451": {
+      "name": "aaaa",
+      "ondemand": true,
+      "onvif": true,
+      "password": "pass4",
+      "url": "bbbbaaaaaaa",
+      "username": "user4"
+    },
+    "4ee54987-75dc-4472-b293-3d26ce081451a": {
+      "name": "aaaa",
+      "onvif": true,
+      "url": "bbbbaaaaaaaa"
+    }
+  }
+}
