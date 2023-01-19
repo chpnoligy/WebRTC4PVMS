@@ -1,0 +1,24 @@
+Sip heeft 1 user/password
+kan kontakt maken met 1 SIP server dmv udp/tcp/wss
+Bij de init word de register gedaan zodat de server er iets heen kan sturen
+
+SIPServer >> RPi REGISTER
+RPi >> SIPServer OK (200)
+
+SIPServer >> RPi INVITE 
+RPi >> Webclient :INVITE
+RPi >> SIPServer Trying (100)
+Webclient >> RPi Ringing (180)
+RPi >> SIPServer Ringing (180)
+ 
+Webclient >> RPi Neemt op OK (200)
+RPi >> SIPServer Neemt op OK (200)
+RPi >> Webclient ACK
+SIPServer >> RPi ACK
+
+RTP <> RTP
+
+Webclient >> RPi BYE 
+RPi >> SIPServer BYE
+SIPServer >> RPi OK (200)
+RPi >> Webclient OK (200)
